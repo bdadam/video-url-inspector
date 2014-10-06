@@ -1,6 +1,6 @@
 {
   "name": "video-url-inspector",
-  "main": "build/inspector.js",
+  "main": "build/videoUrlInspector.js",
   "version": "0.0.1",
   "homepage": "https://github.com/bdadam/video-url-inspector",
   "authors": [
@@ -9,7 +9,8 @@
   "moduleType": [
     "amd",
     "globals",
-    "node"
+    "node",
+    "umd"
   ],
   "keywords": [
     "video",
