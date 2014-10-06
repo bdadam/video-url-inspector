@@ -1,8 +1,8 @@
 var expect = require('chai').expect
 
-var youtube = require('../src/services/youtube');
-var vimeo = require('../src/services/vimeo');
-var dailymotion = require('../src/services/dailymotion');
+var youtube = require('../src/youtube');
+var vimeo = require('../src/vimeo');
+var dailymotion = require('../src/dailymotion');
 
 describe('Youtube', function() {
 
@@ -59,7 +59,7 @@ describe('Vimeo', function() {
 		undefined,
 		null,
 		'something-bad',
-		"https://vimeo.com/11111asa111"
+		"https://vimeo.com/11111asa111" // only numbers are valid
 	];
 	
 	var validUrls = [

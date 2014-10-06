@@ -1,0 +1,31 @@
+{
+  "name": "video-url-inspector",
+  "main": "build/inspector.js",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bdadam/video-url-inspector",
+  "authors": [
+    "bdadam <bdadam@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "video",
+    "embed",
+    "url",
+    "inspector",
+    "youtube",
+    "vimeo",
+    "dailymotion"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
