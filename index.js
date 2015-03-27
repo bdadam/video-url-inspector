@@ -1,10 +1,6 @@
-var hosters = [
-	require('./src/youtube'),
-	require('./src/vimeo'),
-	require('./src/dailymotion')
-];
+var inspect = module.exports = function inspect(url) {
+	var hosters = inspect.hosters;
 
-function inspect(url) {
 	for (var i = 0, l = hosters.length; i < l; i++) {
 		var hoster = hosters[i];
 
@@ -18,4 +14,8 @@ function inspect(url) {
 	return null;	
 }
 
-module.exports = inspect;
+inspect.hosters = [
+	require('./src/youtube'),
+	require('./src/vimeo'),
+	require('./src/dailymotion')
+];
