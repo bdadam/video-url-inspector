@@ -21,8 +21,8 @@ var Dailymotion = {
 		return {
 			hoster: Dailymotion.name,
 			remoteId: remoteId,
-			canonicalUrl: 'http://vimeo.com/' + remoteId,
-			embedUrl: 'http://player.vimeo.com/video/' + remoteId
+			canonicalUrl: 'https://www.dailymotion.com/video/' + remoteId,
+			embedUrl: 'https://www.dailymotion.com/embed/video/' + remoteId,
 		};
 	}
 };
