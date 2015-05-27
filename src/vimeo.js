@@ -27,8 +27,8 @@ var Vimeo = {
 		return {
 			hoster: Vimeo.name,
 			remoteId: remoteId,
-			canonicalUrl: 'http://vimeo.com/' + remoteId,
-			embedUrl: 'http://player.vimeo.com/video/' + remoteId
+			canonicalUrl: 'https://vimeo.com/' + remoteId,
+			embedUrl: 'https://player.vimeo.com/video/' + remoteId
 		};
 	}
 };
