@@ -1,4 +1,4 @@
-var expect = require('chai').expect
+var expect = require('chai').expect;
 
 var youtube = require('../src/youtube');
 var vimeo = require('../src/vimeo');
@@ -61,7 +61,7 @@ describe('Vimeo', function() {
 		'something-bad',
 		"https://vimeo.com/11111asa111" // only numbers are valid
 	];
-	
+
 	var validUrls = [
 		"https://vimeo.com/11111111",
 		"http://vimeo.com/11111111",
@@ -109,7 +109,11 @@ describe('Dailymotion', function() {
 
 	var validUrls = [
 		"http://www.dailymotion.com/video/x44lvd_rates-of-exchange-like-a-renegade_music",
+		"http://www.dailymotion.com/video/x44lvd_rates-of-exchange-like-a-renegade_music?start=32",
 		"http://www.dailymotion.com/video/x44lvd",
+		"http://www.dailymotion.com/video/x44lvd?start=32",
+		"http://dai.ly/x44lvd",
+		"http://dai.ly/x44lvd?start=32",
 		"http://www.dailymotion.com/hub/x44lvd_Galatasaray",
 		"http://www.dailymotion.com/hub/xq9_Galatasaray#video=x44lvd",
 		"http://www.dailymotion.com/video/x44lvd_hakan-yukur-klip_sport",
