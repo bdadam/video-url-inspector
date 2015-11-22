@@ -1,6 +1,6 @@
 {
   "name": "video-url-inspector",
-  "version": "1.1.0",
+  "version": "1.0.2",
   "description": "Everything you can know about a video URL - like provider, id, embed code or iframe source",
   "main": "index.js",
   "directories": {
