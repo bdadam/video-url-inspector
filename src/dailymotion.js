@@ -1,8 +1,8 @@
-var dailymotionRe = /^.+dailymotion.com\/((video|hub)\/([^_]+))?[^#]*(#video=([^_&]+))?/;
+var dailymotionRe = /^.+(?:dailymotion\.com|dai\.ly)\/(?:(?:(?:video|hub)\/)?([^_\?#]+))?[^#]*(?:#video=([^_&\?]+))?/;
 
 function tryGetRemoteIdFromUrl(url) {
 	var m = url.match(dailymotionRe);
-    return m ? m[5] || m[3] : null;
+    return m ? m[2] || m[1] : null;
 }
 
 var Dailymotion = {
