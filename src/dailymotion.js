@@ -23,6 +23,9 @@ var Dailymotion = {
 			remoteId: remoteId,
 			canonicalUrl: 'https://www.dailymotion.com/video/' + remoteId,
 			embedUrl: 'https://www.dailymotion.com/embed/video/' + remoteId,
+			thumbnails: [
+				{ url: 'https://www.dailymotion.com/thumbnail/video/' + remoteId }
+			]
 		};
 	}
 };
