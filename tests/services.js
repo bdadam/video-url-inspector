@@ -10,7 +10,8 @@ describe('Youtube', function() {
 		undefined,
 		null,
 		'something-bad',
-		'http://www.youtube.com/watch?v=dQw4w9WgXc' // too short, only 10 chars
+		'http://www.youtube.com/watch?v=dQw4w9WgXc', // too short, only 10 chars
+		'https://www.google.com/watch?v=kl1LY8obJWs'
 	];
 
 	describe('should not parse incorrect urls', function() {
@@ -28,6 +29,7 @@ describe('Youtube', function() {
 		'http://www.youtube.com/watch?v=dQw4w9WgXcQ',
 		'http://youtu.be/dQw4w9WgXcQ',
 		'http://www.youtube.com/watch?v=dQw4w9WgXcQ#t=0m10s',
+		'http://www.youtube.de/watch?v=dQw4w9WgXcQ#t=0m10s', // different domain
 		'http://www.youtube.com/user/IngridMichaelsonVEVO#p/a/u/1/dQw4w9WgXcQ',
 		'http://youtu.be/dQw4w9WgXcQ',
 		'http://www.youtube.com/embed/dQw4w9WgXcQ',
